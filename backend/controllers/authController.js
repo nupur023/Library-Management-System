@@ -53,6 +53,7 @@ const registerUser = async (req, res, next) => {
       throw new Error('Invalid user data');
     }
   } catch (error) {
+    console.log(error)
     next(error);
   }
 };
