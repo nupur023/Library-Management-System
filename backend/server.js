@@ -17,7 +17,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://127.0.0.1:5173', process.env.FRONTEND_URL],// Vite dev servers
+  origin: ['http://localhost:5173', 'http://127.0.0.1:5173', 'https://merry-manatee-8774ad.netlify.app'],// Vite dev servers
   credentials: true,
 }));
 app.use(express.json());
